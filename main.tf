@@ -18,3 +18,8 @@ terraform {
     # password is provided via TF_HTTP_PASSWORD env variable
   }
 }
+resource "harness_platform_project" "project" {  
+    name        = "Terraform Project"
+    identifier = "terraform_project"
+    org_id      = "default"  
+}
